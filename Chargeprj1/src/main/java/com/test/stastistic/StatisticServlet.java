@@ -41,8 +41,8 @@ public class StatisticServlet extends HttpServlet {
             conn = DriverManager.getConnection("jdbc:mysql://localhost/charge", "root", "root");
       
             String monthSelect = request.getParameter("months");
-            String[] subject = new String[]{"and subject = '飯錢'", "and subject = '油錢'", "and subject = '買衣服'", " and subject = '房租'", "and subject = '教育費'",
-                "and subject ='娛樂'", "and subject = '剪髮'", "and subject = '其它'", ""};
+            String[] subject = new String[]{"and subject = 'Eat'", "and subject = 'Oil'", "and subject = 'Buy Clothes'", " and subject = 'Rent of house'", "and subject = 'Education'",
+                "and subject ='Fun'", "and subject = 'Haircut'", "and subject = 'Other'", ""};
             int[] resSum = new int[]{};
             viewTable(conn, out, monthSelect, subject, resSum);
         } catch (Exception ex) {

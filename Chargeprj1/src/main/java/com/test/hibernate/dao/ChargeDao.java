@@ -26,9 +26,9 @@ public class ChargeDao {
 
 		session.save(charge);
 		transaction.commit();
-
+		session.save(charge);
 		System.out.println("新增資料完成，請至MySQL查詢資料");
-
+		session.close();
 	}
 
 	public void deleteCharge(int idCharge) {
@@ -37,7 +37,7 @@ public class ChargeDao {
 		Charge charge = (Charge) session.load(Charge.class, idCharge);
 		session.delete(charge);
 		transaction.commit();
-
+		session.close();
 		System.out.println("刪除資料完成，請至MySQL查詢資料");
 
 	}
@@ -46,7 +46,7 @@ public class ChargeDao {
 		Transaction transaction = session.beginTransaction();
 		session.update(charge);
 		transaction.commit();
-
+		session.close();
 		System.out.println("修改資料完成，請至MySQL查詢資料");
 
 	}
@@ -58,14 +58,14 @@ public class ChargeDao {
 		Iterator results = null;
 		// 使用Criteria查詢
 		Criteria criteria = session.createCriteria(Charge.class);
-
+		
 		criteria.add(Expression.eq("idCharge", idCharge));
 		results = criteria.list().iterator();
 		while (results.hasNext()) {
 			Charge charge = (Charge) results.next();
 			charges.add(charge);
 		}
-
+		session.close();
 		return charges;
 
 	}
@@ -81,7 +81,7 @@ public class ChargeDao {
 			Charge charge = (Charge) results.next();
 			charges.add(charge);
 		}
-
+		session.close();
 		return charges;
 
 	}
@@ -97,7 +97,7 @@ public class ChargeDao {
 			Charge charge = (Charge) results.next();
 			charges.add(charge);
 		}
-
+		session.close();
 		return charges;
 
 	}
@@ -114,7 +114,8 @@ public class ChargeDao {
 			Charge charge = (Charge) results.next();
 			charges.add(charge);
 		}
-		System.out.println(charges);
+		session.close();
+		
 		return charges;
 	}
 }

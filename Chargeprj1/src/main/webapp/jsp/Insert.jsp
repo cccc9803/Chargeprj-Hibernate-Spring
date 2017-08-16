@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=Big5"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <html>
 <head>
 
@@ -68,6 +69,7 @@
 				<span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;
 					功能</span>
 				<form method="POST" action="/Chargeprj1/insert_charge.do">
+				
 					<p>
 						支出日期<br /> <input type="text" name="Date" id="dateChooser">
 					</p>
