@@ -33,8 +33,10 @@
 
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="/Chargeprj1/index.jsp">首頁</a> <a href="insert_form.do">新增</a>
-			<a href="query_form.do">查詢</a> <a href="/Chargeprj1/Statistic.html">統計</a>
+			<a href="/Chargeprj1/index.jsp">首頁</a>
+		    <a href="insert_form.do">新增</a>
+			<a href="query_form.do">查詢</a>
+			<a href="/Chargeprj1/Statistic.html">統計</a>
 		</div>
 	</div>
 	<div class="row"></div>

@@ -32,10 +32,10 @@ and open the template in the editor.
         <div class="container-fluid">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="/Chargeprj1/index.jsp"></a> <a
-				href="../insert_form.do">穝糤</a> <a
-				href="../query_form.do">琩高</a> <a
-				href="/Chargeprj1/Statistic.html">参璸</a>
+                <a href="/Chargeprj1/index.jsp"></a>
+                 <a href="../insert_form.do">穝糤</a> 
+                 <a href="../query_form.do">琩高</a> 
+                 <a href="/Chargeprj1/Statistic.html">参璸</a>
 
             </div>
             <div class="row"></div>
