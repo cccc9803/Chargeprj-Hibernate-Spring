@@ -16,7 +16,7 @@
     <!-- JDBC驅動程式 --> 
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property> 
     <!-- JDBC URL --> 
-    <property name="connection.url">jdbc:mysql://111.184.46.32:3306/charge</property> 
+    <property name="connection.url">jdbc:mysql://cccc98032.ddns.net:3306/charge</property> 
     <!-- 資料庫使用者 --> 
     <property name="connection.username">admin</property> 
     <!-- 資料庫密碼 --> 
