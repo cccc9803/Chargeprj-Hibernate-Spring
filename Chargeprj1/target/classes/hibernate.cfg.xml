@@ -16,11 +16,11 @@
     <!-- JDBC驅動程式 --> 
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property> 
     <!-- JDBC URL --> 
-    <property name="connection.url">jdbc:mysql://localhost:3306/charge</property> 
+    <property name="connection.url">jdbc:mysql://111.184.46.32:3306/charge</property> 
     <!-- 資料庫使用者 --> 
-    <property name="connection.username">root</property> 
+    <property name="connection.username">admin</property> 
     <!-- 資料庫密碼 --> 
-    <property name="connection.password">root</property> 
+    <property name="connection.password">admin</property> 
 
     <!-- 以下設置物件與資料庫表格映射文件 --> 
  	 <mapping resource="com/test/hibernate/util/Charge.hbm.xml"/> 

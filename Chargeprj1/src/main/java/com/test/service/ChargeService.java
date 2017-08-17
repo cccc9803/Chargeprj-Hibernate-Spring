@@ -25,9 +25,9 @@ public class ChargeService {
 
 	@Transactional
 	public void deleteCharge(int idCharge) {
-		if (idCharge != 0) {
+		
 			this.chargeDao.deleteCharge(idCharge);
-		}
+		
 	}
 
 	@Transactional
